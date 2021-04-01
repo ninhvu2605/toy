@@ -1,6 +1,7 @@
 <?php
 include("./inc/conn.php");
 include('login.php');
+<!DOCTYPE html>
 <html>
 <head>
 	<title>CHuc mung </title>
