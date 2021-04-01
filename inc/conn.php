@@ -1,6 +1,4 @@
 <?php
-
-<?php
 $connection_string = "
   host = ec2-34-225-103-117.compute-1.amazonaws.com
   port = 5432
