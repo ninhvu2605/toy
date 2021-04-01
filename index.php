@@ -4,7 +4,7 @@ if(!$conn){echo "Lost Connect";}
 if(isset($_POST['login'])){
 	$username = $_POST['username'];
  	$password = $_POST['password'];
- 	$sql= "SELECT * FROM account WHERE username ='$username' and password='$password'";
+ 	$sql= "SELECT * FROM account WHERE username ='$username' and pass='$password'";
 	$result = pg_query($conn, $sql);
 	$check = pg_num_rows($result);
 	if($check == 1){
