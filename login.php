@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST')
 	$username = $_POST['username'];
 	$password = $_POST['pass'];
 
-	$user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM user WHERE username='{$username}' AND password = '{$password}'"));
+	$user = pg_fetch_assoc(pg_query($conn, "SELECT * FROM account WHERE username='{$username}' AND password = '{$password}'"));
 	if ($user){
 		$_SESSION['user'] = $user['username'];
 		header ('location:index.php');
