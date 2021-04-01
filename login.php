@@ -47,12 +47,12 @@ if(isset($_POST['login'])){
 				    <a class="nav-link nav-btn-2" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
 				  </li>
 				</ul>
-				<div class="tab-content" id="pills-tabContent">
+				<form class="tab-content" id="pills-tabContent" method="POST">
 				    <div class="tab-pane fade show active login-tab" id="pills-login" role="        tabpanel"  aria-labelledby="pills-login-tab">
 					  	<h1 class="logo "><a href="">LOGO</a></h1>
 					  	<h3 >Sign into your account</h3>
-					  	<div class="form-group" method="POST">
-					  		<input type="username" name="name" class="form-control" placeholder="Username">
+					  	<div class="form-group">
+					  		<input type="text" name="username" class="form-control" placeholder="Username">
 					  		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lock" viewBox="0 0 16  16">
 							  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
 							</svg>
@@ -64,7 +64,8 @@ if(isset($_POST['login'])){
 							</svg>
 					  	</div>
 					  	<div  class="forgot" ><a href="">Forgot your password</a></div>
-					  	<div class="login-btn btn btn-primary"><a href="">Login</a></div>
+					  	
+					    <button class="login-btn btn btn-primary" name="login" type="submit" value="login">Login</button>
 					  	<div class="separator ">
 							<hr>
 							<p>Or</p>
@@ -76,7 +77,7 @@ if(isset($_POST['login'])){
 					  		<a href="" class="google-bg"><i class="fa fa-google"></i></a>
 					  		<a href="" class="linkedin-bg"><i class="fa fa-linkedin"></i></a>
 					  	</div>
-				    </div>
+				    </form>
 					<div class="tab-pane fade register-tab" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
 				  		<h1 class="logo "><a href="">LOGO</a></h1>
 					  	<h3 >Create an account</h3>
