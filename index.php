@@ -1,5 +1,5 @@
 <?php
-include("./inc/conn.php");
+include(" inc/conn.php");
 if(isset($_POST['login'])){
 	$username = $_POST['username'];
  	$password = $_POST['password'];
