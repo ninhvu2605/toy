@@ -1,24 +1,19 @@
 <?php
 session_start();
-if ($_SERVER['REQUEST_METHOD']=='POST')
-	{
-	include('../inc/conn.php');
+if(isset($_POST['login'])){
 	$username = $_POST['username'];
-	$password = $_POST['pass'];
-
-	$user = pg_fetch_assoc(pg_query($conn, "SELECT * FROM account WHERE username='{$username}' AND password = '{$password}'"));
-	if ($user){
-		$_SESSION['user'] = $user['username'];
-		header ('location:index.php');
-		die;
+ 	$password = $_POST['password'];
+ 	$sql= "SELECT * FROM account WHERE user_name ='$username' and pass='$password'";
+	$result = pg_query($conn, $sql);
+	$check = pg_num_rows($result);
+	if($check == 1){
+		echo "Vao dc roi";
+		header("Location:index.php");
 	}
-	else
-	{
-		echo "sai thong tin tai khoan";
+	else{
+		echo "Ngu vl";
 	}
-	
-
-}
+ }
 ?>
 <!DOCTYPE html>
 <html>
