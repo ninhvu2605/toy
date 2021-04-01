@@ -48,6 +48,7 @@ if(isset($_POST['login'])){
 				    <a class="nav-link nav-btn-2" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
 				  </li>
 				</ul>
+				<form>
 				<div class="tab-content" id="pills-tabContent" method="post">
 				    <div class="tab-pane fade show active login-tab" id="pills-login" role="        tabpanel"  aria-labelledby="pills-login-tab">
 					  	<h1 class="logo "><a href="">LOGO</a></h1>
@@ -79,6 +80,7 @@ if(isset($_POST['login'])){
 					  		<a href="" class="linkedin-bg"><i class="fa fa-linkedin"></i></a>
 					  	</div>
 				    </div>
+				</form>
 					<div class="tab-pane fade register-tab" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
 				  		<h1 class="logo "><a href="">LOGO</a></h1>
 					  	<h3 >Create an account</h3>
