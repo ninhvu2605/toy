@@ -24,6 +24,9 @@ body{
     text-transform: uppercase;
     font-weight: 600;
 }
+.form{
+	hight:400px;
+}
 .text-block .welcome h1 a{
 	color: #fff;
 	font-family: 'Audiowide', cursive;
