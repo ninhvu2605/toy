@@ -48,7 +48,7 @@ if(isset($_POST['login'])){
 				    <a class="nav-link nav-btn-2" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
 				  </li>
 				</ul>
-				<form class="tab-content" id="pills-tabContent" method="POST">
+				<form class="tab-content" id="pills-tabContent" method="post">
 				    <div class="tab-pane fade show active login-tab" id="pills-login" role="        tabpanel"  aria-labelledby="pills-login-tab">
 					  	<h1 class="logo "><a href="">LOGO</a></h1>
 					  	<h3 >Sign into your account</h3>
